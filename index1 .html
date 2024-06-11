@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAURAV - DEVLOPER PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .side{
+     width: 300px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    transition: .5s;
+    overflow: hidden;
+    background-color:  rgb(0, 0, 0);
+}
+.side ul{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    height: auto;
+}
+
+.side ul li{
+    font-weight: 800;
+    color: white;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+a{ 
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+    font-size: 22px;
+    transition: ease;
+    border-radius: 30px 0px 0px 30px;
+    width: 98%;
+    margin-left: 2%;
+}
+
+.side.active{
+    left: 0;
+}
+
+.btn{
+    width: 50px;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(0, 0, 33);
+    }
+.btn span{
+    width: 70%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .05s;
+}
+.btn span:first-child{
+    top: 25%;
+}
+.btn span:last-child{
+    top: 75%;
+}
+
+.btn.active{
+    left: 300px;
+}
+
+
+.btn.active span:first-child{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-50deg);
+}
+
+.btn.active span:last-child{
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(50deg);
+}
+
+.btn.active span:nth-child(2)
+{
+    opacity: 0;
+}
+
+/* i will provide source code link in discription if you want to download source code 
+ 
+please subscribe my chennel
+
+*/
+
+/* resposive */
+@media(max-width:791px){
+    .side.active{
+        width: 100%;
+       
+    }
+
+    li{
+        text-align: center;
+    }
+    .btn.active{
+        left: 92%;
+        background-color: black;
+    }
+    li:hover{
+        width: 100%;
+        border: 2px dotted black;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+}
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+        }
+
+        main hr{
+            border: 0;
+            background: blueviolet;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+
+        .parpal {
+            color: blueviolet;
+        }
+
+        .text-gray{
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        .secondsection h1{
+           font-size: 1.9rem;
+        }
+        .secondsection h3{
+            font-size: 1.9rem;
+        }
+
+        .secondsection img{
+            width: 20%;
+            height: 40%;
+            
+        }
+
+        .secondsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical{
+             height: 93px;
+             width: 1px;
+             background-color: white;
+             margin: 0 100px;
+        }
+        .image-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .image-down{
+            width: 23px;
+            position: relative;
+            top: 5px;
+            left: -9px;
+        }
+        
+        .vertical-title{
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 90px;
+            width: 150px;
+            color: gray;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #151029;
+            height: 233px;
+            padding: 23px 122px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">MK_CLASSES</div>
+            <div class="side">
+                <ul class="navbar">
+                    <!--use icons-->
+                    <li><a href="/index1 .html">Home </a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/courses.html">Courses</a></li>
+                    <li><a href="/map.html">Map</a></li>
+                    <li><a href="/contactme.html">contact me</a></li>
+                </ul>
+              </div>
+              <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script>
+            const a = document.querySelector('.side');
+             const n = document.querySelector('.btn');
+              n.addEventListener('click', () => {
+                  a.classList.toggle('active');
+                  n.classList.toggle('active');
+              })
+            
+            </script>
+            </body>
+            </html>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                HI, WELCOME TO
+                <div><span class="parpal"> MK CLASSES</span></div>
+                <div>WEBPAGE</div>
+                <div>First Step Of Sucsses</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="gg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>
+                RESULT
+            </h1>
+            <h3>
+                Class 12 Result
+            </h3>
+            <a href="WhatsApp Image 2024-06-11 at 10.26.55.jpeg"><img src="hh.webp" alt=""></a>
+            <a href="WhatsApp Image 2024-06-11 at 10.26.55.jpeg"><img src="hh.webp" alt=""></a>
+            <a href="WhatsApp Image 2024-06-11 at 10.26.55.jpeg"><img src="hh.webp" alt=""></a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <div class="footer-first">
+                <h3>CONTACT</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li> Contact No. : 6377037772</li>
+                    <li> Address : Amar Nagar Mata Ka Than , Jodhpur</li>
+                    <li><img class="image-down" src="dd.png" alt="">@mk_classes27</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['BEST RESULT', 'BEST FACILITY', 'TEST SERIES'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
